@@ -1,10 +1,10 @@
 # Mean Squared Error
 
-def mse(yTest,yPred):
+def mse(yTrue,yPred):
     total = 0
-    length = len(yTest)
+    length = len(yTrue)
     for i in range(length):
-        total += (yTest[i] - yPred[i])**2
+        total += (yTrue[i] - yPred[i])**2
     return total / length
 
 x = [1,2,3,4,5]
